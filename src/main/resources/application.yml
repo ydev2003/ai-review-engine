@@ -4,9 +4,10 @@ spring:
 
 app:
   io:
-    input-path: ${INPUT_PATH:input/reviews.xlsx}
-    output-path: ${OUTPUT_PATH:output/summary.xlsx}
+    input-path: ${INPUT_PATH:input/product_review_summary_poc_10000_reviews.xlsx}
+    output-path: ${OUTPUT_PATH:output/product_review_summaries.xlsx}
+    worksheet-name: ${WORKSHEET_NAME:Reviews_10000}
   llm:
-    api-key: ${LLM_API_KEY:placeholder}
-    model: ${LLM_MODEL:placeholder}
-    endpoint: ${LLM_ENDPOINT:placeholder}
+    api-key: ${LLM_API_KEY:dummy_key}
+    model: ${LLM_MODEL:gemini-1.5-flash}
+    endpoint: ${LLM_ENDPOINT:https://generativelanguage.googleapis.com/v1beta/models/}
