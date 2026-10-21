@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ai-review-engine
+
+app:
+  io:
+    input-path: ${INPUT_PATH:input/reviews.xlsx}
+    output-path: ${OUTPUT_PATH:output/summary.xlsx}
+  llm:
+    api-key: ${LLM_API_KEY:placeholder}
+    model: ${LLM_MODEL:placeholder}
+    endpoint: ${LLM_ENDPOINT:placeholder}
